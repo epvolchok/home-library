@@ -303,6 +303,7 @@ class db_connection():
         with self.connection.cursor() as cursor:
             cursor.execute(query, params)
             self.connection.commit()
+        print('Changes\'ve commited successfully')
 
 def main():
     conn = db_connection()
